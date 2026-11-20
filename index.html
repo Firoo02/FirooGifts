@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firoo Gifts — Turn TikTok LIVE gifts into game actions</title>
+<meta name="description" content="Firoo Gifts turns TikTok LIVE gifts, likes and follows into keyboard actions in your game, and gives you pro overlays for OBS and TikTok LIVE Studio. 3-day free trial. Black Friday: 80% off yearly until 12-12-2026.">
+<meta property="og:title" content="Firoo Gifts — TikTok LIVE gifts → game actions">
+<meta property="og:description" content="Game integrations + interactive overlays for TikTok LIVE. 3-day free trial. Black Friday 80% OFF until 12-12-2026.">
+<meta property="og:image" content="https://firoo02.github.io/FirooGifts/assets/banner.jpg">
+<link rel="icon" href="assets/logo.png">
+<style>
+  :root { --bg:#0a1022; --bg2:#101a36; --card:#141f3d; --line:#25345e; --txt:#eef3ff; --mut:#9fb0d6; --acc:#24c8ff; --acc2:#5e5cff; --ok:#3ddc84; --hot:#ffb01e; --hot2:#ff6a14; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:radial-gradient(1200px 600px at 70% -10%, #1a2c63 0%, transparent 60%), var(--bg); color:var(--txt);
+         font:16px/1.65 "Segoe UI", system-ui, -apple-system, Tahoma, Arial, sans-serif; }
+  a { color:var(--acc); text-decoration:none; }
+  .wrap { width:min(1120px, 92vw); margin:0 auto; }
+  nav { position:sticky; top:0; z-index:20; backdrop-filter:blur(14px); background:rgba(10,16,34,.72); border-bottom:1px solid var(--line); }
+  nav .wrap { display:flex; align-items:center; gap:18px; padding:10px 0; }
+  .brand { display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.5px; color:var(--txt); }
+  .brand img { width:38px; height:38px; }
+  nav .sp { flex:1; }
+  nav a.l { color:var(--mut); font-size:14px; }
+  nav a.l:hover { color:var(--txt); }
+  .lang { border:1px solid var(--line); background:var(--card); color:var(--txt); padding:6px 14px; border-radius:20px; cursor:pointer; font:inherit; font-size:13px; }
+  .btn { display:inline-flex; align-items:center; gap:10px; border:0; border-radius:14px; padding:14px 26px; font:700 17px/1 inherit; cursor:pointer; color:#04101f;
+         background:linear-gradient(90deg,var(--acc),#7a8dff); box-shadow:0 10px 30px rgba(36,200,255,.28); transition:.18s; }
+  .btn:hover { transform:translateY(-2px); box-shadow:0 14px 36px rgba(36,200,255,.4); color:#04101f; }
+  .btn.ghost { background:transparent; color:var(--txt); border:1px solid var(--line); box-shadow:none; }
+  .btn.hot { background:linear-gradient(90deg,var(--hot),var(--hot2)); color:#2a1200; box-shadow:0 10px 30px rgba(255,140,20,.3); }
+  .hero { padding:70px 0 40px; display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center; }
+  .badge { display:inline-block; background:linear-gradient(90deg,var(--hot),var(--hot2)); color:#2a1200; font-weight:800; font-size:13px; padding:6px 14px; border-radius:20px; letter-spacing:.4px; }
+  h1 { font-size:clamp(34px,5vw,58px); line-height:1.1; margin:16px 0 16px; letter-spacing:-.5px; }
+  h1 em { font-style:normal; background:linear-gradient(90deg,var(--acc),#9a8cff); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .sub { color:var(--mut); font-size:19px; max-width:560px; }
+  .cta { display:flex; flex-wrap:wrap; gap:12px; margin:26px 0 12px; }
+  .meta { color:var(--mut); font-size:13.5px; }
+  .meta b { color:var(--ok); }
+  .video { justify-self:center; width:min(340px,80vw); aspect-ratio:9/16; border-radius:28px; overflow:hidden; border:1px solid var(--line); box-shadow:0 30px 80px rgba(0,0,0,.55), 0 0 60px rgba(36,200,255,.15); background:#000; }
+  .video video { width:100%; height:100%; display:block; object-fit:cover; }
+  section { padding:60px 0; }
+  h2 { font-size:clamp(26px,3.4vw,38px); margin:0 0 10px; letter-spacing:-.3px; }
+  .lead { color:var(--mut); max-width:720px; margin:0 0 30px; font-size:17px; }
+  .grid { display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); }
+  .card { background:linear-gradient(180deg,var(--card),#10193a); border:1px solid var(--line); border-radius:20px; padding:24px; }
+  .card h3 { margin:6px 0 8px; font-size:20px; }
+  .card p { margin:0; color:var(--mut); font-size:15px; }
+  .ic { width:46px; height:46px; border-radius:14px; display:grid; place-items:center; font-size:24px; background:linear-gradient(135deg,rgba(36,200,255,.25),rgba(94,92,255,.25)); }
+  .shots { display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); align-items:start; }
+  .shots img, .ui img { width:100%; border-radius:18px; border:1px solid var(--line); display:block; }
+  .shots figcaption, .ui figcaption { color:var(--mut); font-size:14px; padding:8px 4px; text-align:center; }
+  figure { margin:0; }
+  .steps { counter-reset:s; display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); }
+  .step { position:relative; padding:24px 24px 24px 24px; }
+  .step:before { counter-increment:s; content:counter(s); position:absolute; top:-14px; inset-inline-start:20px; width:34px; height:34px; border-radius:50%; background:linear-gradient(135deg,var(--acc),var(--acc2)); color:#04101f; font-weight:800; display:grid; place-items:center; }
+  .sale { background:linear-gradient(135deg,#2a1b05,#1a1030); border:1px solid #7a4a10; border-radius:26px; padding:34px; position:relative; overflow:hidden; }
+  .sale:before { content:""; position:absolute; width:520px; height:520px; right:-160px; top:-260px; background:radial-gradient(circle,rgba(255,150,30,.35),transparent 65%); }
+  .sale h2 { color:#ffd98a; }
+  .plans { display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:22px; position:relative; }
+  .plan { background:#0c1431; border:1px solid var(--line); border-radius:22px; padding:28px; text-align:center; position:relative; }
+  .plan.best { border:2px solid var(--hot); box-shadow:0 0 50px rgba(255,170,40,.2); }
+  .plan .nm { color:var(--acc); font-weight:800; letter-spacing:1px; font-size:14px; }
+  .plan .old { color:#7d8bb0; text-decoration:line-through; font-size:22px; margin-top:6px; min-height:30px; }
+  .plan .price { font-size:64px; font-weight:900; line-height:1.05; color:#fff; }
+  .plan.best .price { color:#ffd98a; }
+  .plan .per { color:var(--mut); margin-bottom:12px; }
+  .plan .tag { position:absolute; top:-14px; inset-inline-end:18px; background:linear-gradient(90deg,var(--hot),var(--hot2)); color:#2a1200; font-weight:800; font-size:12.5px; padding:5px 14px; border-radius:20px; }
+  .plan ul { list-style:none; padding:0; margin:14px 0 20px; text-align:start; color:var(--mut); font-size:14.5px; }
+  .plan li:before { content:"✓"; color:var(--ok); font-weight:800; margin-inline-end:8px; }
+  .deadline { margin-top:20px; display:flex; flex-wrap:wrap; gap:10px; align-items:center; position:relative; }
+  .deadline .pill { background:rgba(255,176,30,.14); border:1px solid rgba(255,176,30,.5); color:#ffd98a; padding:8px 16px; border-radius:20px; font-weight:700; font-size:14px; }
+  .free { margin-top:18px; border:1px dashed var(--line); border-radius:18px; padding:18px 22px; color:var(--mut); }
+  .free b { color:var(--ok); }
+  details { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px 20px; margin-bottom:12px; }
+  summary { cursor:pointer; font-weight:700; }
+  details p { color:var(--mut); margin:10px 0 0; }
+  .contact { display:flex; flex-wrap:wrap; gap:14px; }
+  .contact a { display:inline-flex; align-items:center; gap:10px; background:var(--card); border:1px solid var(--line); color:var(--txt); padding:14px 22px; border-radius:16px; font-weight:700; }
+  .contact a:hover { border-color:var(--acc); }
+  footer { border-top:1px solid var(--line); padding:30px 0 50px; color:var(--mut); font-size:14px; text-align:center; }
+  [lang-only] { display:none; }
+  html[lang="ar"] [lang-only="ar"], html[lang="en"] [lang-only="en"] { display:revert; }
+  html[dir="rtl"] body { font-family:"Segoe UI", Tahoma, "Noto Sans Arabic", Arial, sans-serif; }
+  @media (max-width:860px) { .hero { grid-template-columns:1fr; text-align:center; padding-top:40px; } .sub { margin-inline:auto; } .cta { justify-content:center; } nav a.l { display:none; } }
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top"><img src="assets/logo.png" alt=""><span>FIROO GIFTS</span></a>
+  <div class="sp"></div>
+  <a class="l" href="#features" data-en="Features" data-ar="المميزات"></a>
+  <a class="l" href="#overlays" data-en="Overlays" data-ar="الأوفرلايز"></a>
+  <a class="l" href="#pricing" data-en="Pricing" data-ar="الأسعار"></a>
+  <a class="l" href="#faq" data-en="FAQ" data-ar="أسئلة"></a>
+  <button class="lang" id="lang">العربية</button>
+</div></nav>
+
+<header class="wrap hero" id="top">
+  <div>
+    <span class="badge" data-en="BLACK FRIDAY · 80% OFF · UNTIL 12-12-2026" data-ar="بلاك فرايداي · خصم 80% · لحد 12-12-2026"></span>
+    <h1 data-html-en="Turn your TikTok LIVE gifts into <em>real game actions</em>" data-html-ar="حوّل هدايا لايف تيك توك لـ<em>أحداث حقيقية جوه اللعبة</em>"></h1>
+    <p class="sub" data-en="Every gift, like and follow presses a key in your game, instantly. Add pro overlays for OBS and TikTok LIVE Studio — top supporters, team battles, gift guide, fireworks and more. Set up in minutes." data-ar="كل هدية ولايك وفولو بيضغط زرار في لعبتك فورًا. وكمان أوفرلايز احترافية لـ OBS و TikTok LIVE Studio: توب الداعمين، معركة الفرق، دليل الهدايا، ألعاب نارية وأكتر. بتجهّزه في دقايق."></p>
+    <div class="cta">
+      <a class="btn" href="https://github.com/Firoo02/FirooGifts/releases/latest/download/FirooGifts_Setup.exe" data-en="⬇ Download for Windows" data-ar="⬇ حمّل للويندوز"></a>
+      <a class="btn ghost" href="#pricing" data-en="See pricing" data-ar="شوف الأسعار"></a>
+    </div>
+    <div class="meta"><b data-en="3-day free trial" data-ar="تجربة مجانية 3 أيام"></b> · <span data-en="all features, no card, no sign-up · Windows 10/11" data-ar="كل المميزات، من غير كارت ولا تسجيل · ويندوز 10/11"></span></div>
+  </div>
+  <div class="video"><video src="assets/promo.mp4" poster="assets/poster.jpg" controls muted loop playsinline preload="metadata"></video></div>
+</header>
+
+<section id="features"><div class="wrap">
+  <h2 data-en="Built for streamers who want the chat to play" data-ar="معمول للستريمرز اللي عايزين الشات يلعب"></h2>
+  <p class="lead" data-en="Firoo Gifts connects to your TikTok LIVE, listens to every gift, like, follow, share, comment and join, and turns each one into the action you choose." data-ar="Firoo Gifts بيتصل بلايفك على تيك توك، وبيسمع كل هدية ولايك وفولو وشير وكومنت وانضمام، ويحوّل كل واحد للحركة اللي إنت تختارها."></p>
+  <div class="grid">
+    <div class="card"><div class="ic">🎮</div><h3 data-en="Game Integrations" data-ar="ربط الألعاب"></h3><p data-en="Map any gift or event to a key press in any game that reads the keyboard. Combos are queued fairly so a big Rose x100 never blocks the rest." data-ar="اربط أي هدية أو حدث بضغطة زرار في أي لعبة بتقرا الكيبورد. الكومبو بيتنظم بعدل فمفيش هدية كبيرة بتعطّل الباقي."></p></div>
+    <div class="card"><div class="ic">📺</div><h3 data-en="Interactive Overlays" data-ar="أوفرلايز تفاعلية"></h3><p data-en="Top supporters podium, team score battle, last like/follow, gift gallery, gift guide, bio link and fireworks — one link for OBS or TikTok LIVE Studio." data-ar="منصة توب الداعمين، معركة سكور الفرق، آخر لايك/فولو، معرض الهدايا، دليل الهدايا، رابط البايو وألعاب نارية — رابط واحد لـ OBS أو TikTok LIVE Studio."></p></div>
+    <div class="card"><div class="ic">⚡</div><h3 data-en="Auto-connect" data-ar="اتصال تلقائي"></h3><p data-en="Go LIVE and it connects by itself. Close the LIVE and it waits for the next one. Nothing to click." data-ar="افتح اللايف وهو بيتصل لوحده. اقفل اللايف وهو بيستنى اللي بعده. من غير ما تضغط حاجة."></p></div>
+    <div class="card"><div class="ic">🗂</div><h3 data-en="A profile for every game" data-ar="بروفايل لكل لعبة"></h3><p data-en="Switch games in one click. Import, export and duplicate profiles to share your setup." data-ar="بدّل بين الألعاب بضغطة. استورد وصدّر وانسخ البروفايلات وشارك إعدادك."></p></div>
+    <div class="card"><div class="ic">🎁</div><h3 data-en="Gift Guide" data-ar="دليل الهدايا"></h3><p data-en="A vertical guide that shows your viewers which gift triggers which action, with pictures, and updates the moment you edit a profile." data-ar="دليل طولي بيوري المشاهدين أنهي هدية بتعمل إيه، بالصور، وبيتحدث أول ما تعدّل البروفايل."></p></div>
+    <div class="card"><div class="ic">🔄</div><h3 data-en="Automatic updates" data-ar="تحديثات تلقائية"></h3><p data-en="New version out? You get a button, one click and it installs itself and reopens. Your settings stay." data-ar="في نسخة جديدة؟ بيظهرلك زرار، ضغطة واحدة وبتتثبت لوحدها وتفتح تاني. إعداداتك بتفضل."></p></div>
+  </div>
+</div></section>
+
+<section id="overlays"><div class="wrap">
+  <h2 data-en="Overlays that look like a pro made them" data-ar="أوفرلايز شكلها احترافي"></h2>
+  <p class="lead" data-en="Fully animated, fully editable (size, colors, text, animation). Paste the link as a Browser source in OBS or a Link source in TikTok LIVE Studio." data-ar="متحركة بالكامل وكلها قابلة للتعديل (الحجم، الألوان، الكتابة، الأنيميشن). الصق الرابط كمصدر Browser في OBS أو Link في TikTok LIVE Studio."></p>
+  <div class="shots">
+    <figure><img src="assets/ov-top.png" alt="Top supporters" loading="lazy"><figcaption data-en="Top supporters podium" data-ar="منصة توب الداعمين"></figcaption></figure>
+    <figure><img src="assets/ov-teams.png" alt="Team score" loading="lazy"><figcaption data-en="Team score battle" data-ar="معركة سكور الفرق"></figcaption></figure>
+    <figure><img src="assets/ov-likes.png" alt="Top likes" loading="lazy"><figcaption data-en="Top likes — free forever" data-ar="توب اللايكات — مجاني دايمًا"></figcaption></figure>
+    <figure><img src="assets/ov-last.png" alt="Last like" loading="lazy"><figcaption data-en="Last like & follow" data-ar="آخر لايك وفولو"></figcaption></figure>
+    <figure style="max-width:360px"><img src="assets/ov-guide.png" alt="Gift guide" loading="lazy"><figcaption data-en="Gift guide" data-ar="دليل الهدايا"></figcaption></figure>
+  </div>
+  <div class="ui" style="margin-top:26px">
+    <figure><img src="assets/ui-main.png" alt="Firoo Gifts app" loading="lazy"><figcaption data-en="The app: clean, fast, English or Arabic" data-ar="البرنامج: نضيف وسريع، إنجليزي أو عربي"></figcaption></figure>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2 data-en="Up and running in 3 steps" data-ar="شغّال في 3 خطوات"></h2>
+  <div class="steps" style="margin-top:30px">
+    <div class="card step"><h3 data-en="Install" data-ar="ثبّت"></h3><p data-en="Download, run the installer. The 3-day trial starts with every feature unlocked." data-ar="حمّل وشغّل المثبّت. التجربة 3 أيام بتبدأ بكل المميزات مفتوحة."></p></div>
+    <div class="card step"><h3 data-en="Map your gifts" data-ar="اربط هداياك"></h3><p data-en="Pick a gift, pick a key (or a video), done. Test any row with one click." data-ar="اختار هدية واختار زرار (أو فيديو) وخلاص. جرّب أي صف بضغطة."></p></div>
+    <div class="card step"><h3 data-en="Go LIVE" data-ar="ابدأ لايف"></h3><p data-en="Type your TikTok username, add the overlay links to OBS, and let your chat play." data-ar="اكتب يوزر تيك توك، ضيف روابط الأوفرلايز في OBS، وسيب الشات يلعب."></p></div>
+  </div>
+</div></section>
+
+<section id="pricing"><div class="wrap">
+  <div class="sale">
+    <span class="badge" data-en="BLACK FRIDAY LAUNCH OFFER" data-ar="عرض إطلاق بلاك فرايداي"></span>
+    <h2 style="margin-top:14px" data-en="80% off the yearly plan" data-ar="خصم 80% على الاشتراك السنوي"></h2>
+    <p class="lead" style="margin-bottom:0" data-en="For the first 100 subscribers, and only until 12-12-2026. Pay once a year and your price drops to about 42 EGP a month." data-ar="لأول 100 مشترك، ولحد يوم 12-12-2026 بس. ادفع مرة في السنة وسعرك ينزل لحوالي 42 جنيه في الشهر."></p>
+    <div class="plans">
+      <div class="plan">
+        <div class="nm" data-en="MONTHLY" data-ar="شهري"></div><div class="old">&nbsp;</div>
+        <div class="price">300</div><div class="per" data-en="EGP / month" data-ar="جنيه / شهر"></div>
+        <ul><li data-en="All features" data-ar="كل المميزات"></li><li data-en="No commitment, renew monthly" data-ar="من غير التزام، جدّد كل شهر"></li><li data-en="Automatic updates" data-ar="تحديثات تلقائية"></li></ul>
+        <a class="btn ghost" href="#contact" data-en="Subscribe" data-ar="اشترك"></a>
+      </div>
+      <div class="plan best">
+        <span class="tag" data-en="SAVE 80%" data-ar="وفّر 80%"></span>
+        <div class="nm" data-en="YEARLY" data-ar="سنوي"></div><div class="old">2500</div>
+        <div class="price">500</div><div class="per" data-en="EGP / year · about 42 EGP / month" data-ar="جنيه / سنة · حوالي 42 جنيه / شهر"></div>
+        <ul><li data-en="All features" data-ar="كل المميزات"></li><li data-en="86% cheaper than 12 monthly payments" data-ar="أرخص 86% من 12 دفعة شهرية"></li><li data-en="Automatic updates" data-ar="تحديثات تلقائية"></li></ul>
+        <a class="btn hot" href="#contact" data-en="Get the offer" data-ar="خد العرض"></a>
+      </div>
+    </div>
+    <div class="deadline">
+      <span class="pill" data-en="Offer ends 12-12-2026" data-ar="العرض بينتهي 12-12-2026"></span>
+      <span class="pill" data-en="First 100 subscribers" data-ar="لأول 100 مشترك"></span>
+      <span class="pill" data-en="3-day free trial first" data-ar="تجربة مجانية 3 أيام الأول"></span>
+    </div>
+  </div>
+  <div class="free"><b data-en="Free forever:" data-ar="مجاني دايمًا:"></b> <span data-en="Top Likes and Fireworks overlays keep working even after the trial, no key needed." data-ar="أوفرلايز توب اللايكات والألعاب النارية بتفضل شغالة حتى بعد التجربة، من غير مفتاح."></span></div>
+  <div class="free" style="margin-top:12px"><span data-en="Need it on more than one PC (for example 3)? Ask for a multi-device key. Every key is tied to your device(s), so it can't be shared." data-ar="محتاجه على أكتر من جهاز (مثلًا 3)؟ اطلب كود لعدة أجهزة. كل كود مربوط بجهازك/أجهزتك فمينفعش يتشارك."></span></div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <h2 data-en="Questions" data-ar="أسئلة شائعة"></h2>
+  <details><summary data-en="How do I subscribe?" data-ar="أشترك إزاي؟"></summary><p data-en="Open the app, press Subscribe to see your device number, and send it to us on WhatsApp, Discord or TikTok. You get your key, paste it in, and you're in. Renewals use the same key." data-ar="افتح البرنامج، دوس اشترك وهيظهرلك رقم جهازك، وابعته لنا على واتساب أو ديسكورد أو تيك توك. هتستلم الكود، تلصقه وخلاص. التجديد بيبقى بنفس الكود."></p></details>
+  <details><summary data-en="Windows says 'unknown publisher'. Is it safe?" data-ar="ويندوز بيقول 'ناشر غير معروف'. آمن؟"></summary><p data-en="The installer isn't code-signed yet (certificates are expensive for a new project), so SmartScreen may warn you. Click More info → Run anyway. Updates inside the app are cryptographically signed by us, so a tampered file is refused automatically." data-ar="المثبّت لسه مش موقّع بشهادة (الشهادات غالية لمشروع جديد)، فممكن SmartScreen يحذّرك. دوس More info ثم Run anyway. والتحديثات جوه البرنامج موقّعة منا تشفيريًا، فأي ملف متلاعب فيه بيترفض لوحده."></p></details>
+  <details><summary data-en="Which games work?" data-ar="أنهي ألعاب شغالة؟"></summary><p data-en="Any game that reacts to keyboard input. You decide which key each gift presses. Overlays work in any streaming software that can show a web page." data-ar="أي لعبة بتستجيب للكيبورد. إنت بتحدد كل هدية بتضغط أنهي زرار. والأوفرلايز شغالة في أي برنامج بث بيعرض صفحة ويب."></p></details>
+  <details><summary data-en="What happens when the trial ends?" data-ar="إيه اللي بيحصل بعد التجربة؟"></summary><p data-en="The program locks, except Top Likes and Fireworks which stay free. Your settings are kept, so subscribing later picks up exactly where you left off." data-ar="البرنامج بيتقفل ما عدا توب اللايكات والألعاب النارية. إعداداتك محفوظة، فلما تشترك بتكمّل من نفس المكان."></p></details>
+  <details><summary data-en="Does it need internet?" data-ar="محتاج إنترنت؟"></summary><p data-en="Yes, to read your LIVE from TikTok. The key itself works offline until its end date." data-ar="أيوه، عشان يقرا اللايف من تيك توك. الكود نفسه بيشتغل أوفلاين لحد تاريخ نهايته."></p></details>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2 data-en="Talk to us" data-ar="كلّمنا"></h2>
+  <p class="lead" data-en="Subscriptions, upgrades, custom requests, help — we reply fast." data-ar="اشتراكات، ترقية، طلبات خاصة، مساعدة — بنرد بسرعة."></p>
+  <div class="contact">
+    <a href="https://wa.me/201551742673">💬 WhatsApp +201551742673</a>
+    <a href="https://www.tiktok.com/@firoogames">🎵 TikTok @firoogames</a>
+    <a href="https://discord.com/channels/@me" onclick="navigator.clipboard&&navigator.clipboard.writeText('firoo000')">🎧 Discord firoo000</a>
+  </div>
+  <div class="cta" style="margin-top:30px">
+    <a class="btn" href="https://github.com/Firoo02/FirooGifts/releases/latest/download/FirooGifts_Setup.exe" data-en="⬇ Download Firoo Gifts" data-ar="⬇ حمّل Firoo Gifts"></a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">© 2026 Firoo Gifts · <span data-en="Not affiliated with TikTok." data-ar="غير تابع لتيك توك."></span></div></footer>
+
+<script>
+(function () {
+  var html = document.documentElement, btn = document.getElementById('lang');
+  function setLang(l) {
+    html.lang = l; html.dir = l === 'ar' ? 'rtl' : 'ltr';
+    document.querySelectorAll('[data-en]').forEach(function (e) { e.textContent = e.getAttribute('data-' + l); });
+    document.querySelectorAll('[data-html-en]').forEach(function (e) { e.innerHTML = e.getAttribute('data-html-' + l); });
+    btn.textContent = l === 'ar' ? 'English' : 'العربية';
+    try { localStorage.setItem('lang', l); } catch (e) {}
+  }
+  var saved = 'en';
+  try { saved = localStorage.getItem('lang') || (/^ar/i.test(navigator.language) ? 'ar' : 'en'); } catch (e) {}
+  setLang(saved);
+  btn.onclick = function () { setLang(html.lang === 'ar' ? 'en' : 'ar'); };
+})();
+</script>
+</body>
+</html>
