@@ -18,7 +18,7 @@ Every gift, like and follow on your TikTok LIVE presses a key in your game, inst
   4. 👍 **Last Like**: latest liker card
   5. ➕ **Last Follow**: shout-out card for each new follower
   6. 🎁 **Gift Gallery**: gift goals with progress rings
-  7. 📜 **Gift Guide**: which gift does what, with split pages for helpers and saboteurs
+  7. 📜 **Gift Guide**: which gift does what. Includes **Helpers vs Saboteurs**: two animated lists, one link each or both in one, the row pops when its gift arrives
   8. 🔗 **Bio Link**: animated support-link-in-bio banner, 2 styles (sparks / brush swoosh)
   9. 🎆 **Fireworks** *(free forever)*: every gift launches fireworks sized by its value
   10. ⚔ **Team Score**: two-team battle bar, 2 designs
@@ -75,7 +75,7 @@ Open the app → **Subscribe** → send us your device number → paste the key 
   4. 👍 **آخر لايك**
   5. ➕ **آخر فولو**
   6. 🎁 **معرض الهدايا**: أهداف هدايا بدوائر تقدم
-  7. 📜 **دليل الهدايا**: أنهي هدية بتعمل إيه، مع صفحات للمساعدين والمخرّبين
+  7. 📜 **دليل الهدايا**: أنهي هدية بتعمل إيه. وفيه **المساعدين والمخرّبين**: قايمتين متحركتين، رابط لكل واحدة أو الاتنين في رابط، والصف بيتحرك لما هديته توصل
   8. 🔗 **رابط البايو**: بانر متحرك بستايلين (شرارات / فرشاة)
   9. 🎆 **ألعاب نارية** *(مجانية دايمًا)*: كل هدية بتطلق ألعاب نارية بحجم قيمتها
   10. ⚔ **سكور الفرق**: معركة فريقين بتصميمين
