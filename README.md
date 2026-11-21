@@ -48,7 +48,7 @@ Need several PCs (for example 3)? Ask for a multi-device key. Every key is tied 
 
 Open the app → **Subscribe** → send us your device number → paste the key we send back. Renewals use the same key.
 
-📱 WhatsApp **+201551742673** · 🎧 Discord **firoo000** · 🎵 TikTok **[@firoogames](https://www.tiktok.com/@firoogames)**
+💬 **[Chat on WhatsApp](https://wa.me/201551742673)** · 🎧 Discord **firoo000** · 🎵 TikTok **[@firoogames](https://www.tiktok.com/@firoogames)**
 
 ## Notes
 
@@ -107,6 +107,6 @@ Open the app → **Subscribe** → send us your device number → paste the key 
 
 افتح البرنامج ← **اشترك** ← ابعتلنا رقم جهازك ← الصق الكود اللي هيوصلك. التجديد بنفس الكود.
 
-📱 واتساب **+201551742673** · 🎧 ديسكورد **firoo000** · 🎵 تيك توك **[@firoogames](https://www.tiktok.com/@firoogames)**
+💬 **[كلّمنا على واتساب](https://wa.me/201551742673)** · 🎧 ديسكورد **firoo000** · 🎵 تيك توك **[@firoogames](https://www.tiktok.com/@firoogames)**
 
 </div>
