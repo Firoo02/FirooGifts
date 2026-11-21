@@ -248,8 +248,9 @@
   <p class="lead" data-en="Subscriptions, upgrades, custom requests, help — we reply fast." data-ar="اشتراكات، ترقية، طلبات خاصة، مساعدة — بنرد بسرعة."></p>
   <div class="contact">
     <a href="https://wa.me/201551742673" target="_blank" rel="noopener" data-en="💬 Chat on WhatsApp" data-ar="💬 كلّمنا على واتساب"></a>
-    <a href="https://www.tiktok.com/@firoogames">🎵 TikTok @firoogames</a>
-    <a href="https://discord.com/channels/@me" onclick="navigator.clipboard&&navigator.clipboard.writeText('firoo000')">🎧 Discord firoo000</a>
+    <a href="https://www.tiktok.com/@firoogames" target="_blank" rel="noopener" data-en="🎵 TikTok" data-ar="🎵 تيك توك"></a>
+    <a href="https://discord.com/channels/@me" id="dc" target="_blank" rel="noopener" data-en="🎧 Discord" data-ar="🎧 ديسكورد"></a>
+    <span id="dcmsg" style="display:none;align-self:center;color:var(--ok);font-size:14px" data-en="Copied. In Discord press Add Friend and paste." data-ar="اتنسخ. في ديسكورد دوس Add Friend والصق."></span>
   </div>
   <div class="cta" style="margin-top:30px">
     <a class="btn" href="https://github.com/Firoo02/FirooGifts/releases/latest/download/FirooGifts_Setup.exe" data-en="⬇ Download Firoo Gifts" data-ar="⬇ حمّل Firoo Gifts"></a>
@@ -272,6 +273,12 @@
   try { saved = localStorage.getItem('lang') || (/^ar/i.test(navigator.language) ? 'ar' : 'en'); } catch (e) {}
   setLang(saved);
   btn.onclick = function () { setLang(html.lang === 'ar' ? 'en' : 'ar'); };
+  // Discord has no public link to a person: the button copies the username (not shown on the page) and opens Discord
+  var dc = document.getElementById('dc');
+  if (dc) dc.addEventListener('click', function () {
+    try { navigator.clipboard.writeText(atob('Zmlyb28wMDA=')); } catch (e) {}
+    var m = document.getElementById('dcmsg'); m.style.display = 'inline'; setTimeout(function () { m.style.display = 'none'; }, 6000);
+  });
 })();
 </script>
 </body>
