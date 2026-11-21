@@ -2,7 +2,7 @@
 
 # Firoo Gifts — turn TikTok LIVE gifts into real game actions
 
-**[⬇ Download for Windows](https://github.com/Firoo02/FirooGifts/releases/latest/download/FirooGifts_Setup.exe)** · **[🌐 Website](https://firoo02.github.io/FirooGifts/)** · 3-day free trial, all features, no card.
+**[⬇ Download for Windows](https://github.com/Firoo02/FirooGifts/releases/latest/download/FirooGifts_Setup.exe)** · **[🌐 Website](https://firoogifts.pages.dev/)** · 3-day free trial, all features, no card.
 
 > 🔥 **BLACK FRIDAY — 80% OFF the yearly plan**, for the first **100** subscribers, **until 12-12-2026**.
 
@@ -48,7 +48,7 @@ Need several PCs (for example 3)? Ask for a multi-device key. Every key is tied 
 
 Open the app → **Subscribe** → send us your device number → paste the key we send back. Renewals use the same key.
 
-💬 **[WhatsApp](https://wa.me/201551742673)** · 🎧 **[Discord](https://firoo02.github.io/FirooGifts/#contact)** · 🎵 **[TikTok](https://www.tiktok.com/@firoogames)**
+💬 **[WhatsApp](https://wa.me/201551742673)** · 🎧 **[Discord](https://firoogifts.pages.dev/#contact)** · 🎵 **[TikTok](https://www.tiktok.com/@firoogames)**
 
 ## Notes
 
@@ -61,7 +61,7 @@ Open the app → **Subscribe** → send us your device number → paste the key 
 
 # Firoo Gifts — حوّل هدايا لايف تيك توك لأحداث حقيقية جوه اللعبة
 
-**[⬇ حمّل للويندوز](https://github.com/Firoo02/FirooGifts/releases/latest/download/FirooGifts_Setup.exe)** · **[🌐 الموقع](https://firoo02.github.io/FirooGifts/)** · تجربة مجانية 3 أيام بكل المميزات، من غير كارت.
+**[⬇ حمّل للويندوز](https://github.com/Firoo02/FirooGifts/releases/latest/download/FirooGifts_Setup.exe)** · **[🌐 الموقع](https://firoogifts.pages.dev/)** · تجربة مجانية 3 أيام بكل المميزات، من غير كارت.
 
 > 🔥 **بلاك فرايداي — خصم 80% على الاشتراك السنوي** لأول **100** مشترك، **لحد 12-12-2026**.
 
@@ -107,6 +107,6 @@ Open the app → **Subscribe** → send us your device number → paste the key 
 
 افتح البرنامج ← **اشترك** ← ابعتلنا رقم جهازك ← الصق الكود اللي هيوصلك. التجديد بنفس الكود.
 
-💬 **[واتساب](https://wa.me/201551742673)** · 🎧 **[ديسكورد](https://firoo02.github.io/FirooGifts/#contact)** · 🎵 **[تيك توك](https://www.tiktok.com/@firoogames)**
+💬 **[واتساب](https://wa.me/201551742673)** · 🎧 **[ديسكورد](https://firoogifts.pages.dev/#contact)** · 🎵 **[تيك توك](https://www.tiktok.com/@firoogames)**
 
 </div>
