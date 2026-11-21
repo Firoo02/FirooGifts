@@ -11,7 +11,19 @@ Every gift, like and follow on your TikTok LIVE presses a key in your game, inst
 ## What you get
 
 - 🎮 **Game Integrations** — map any gift or event (gift, like, follow, share, comment, join) to a key press in any game that reads the keyboard. Fair queue: a big combo never blocks the rest.
-- 📺 **Interactive Overlays** — top supporters podium, team score battle, last like/follow, gift gallery, gift guide, bio link and fireworks. One link for OBS or TikTok LIVE Studio. Fully animated and editable.
+- 📺 **Interactive Overlays — 10 of them, all included.** One link each for OBS or TikTok LIVE Studio, fully animated and editable:
+  1. 🎬 **Gift Videos**: plays your video in OBS when a gift arrives, with the supporter's name
+  2. 🏆 **Top 3 Supporters**: animated podium with live coin totals
+  3. ❤ **Top Likes** *(free forever)*: live likes leaderboard
+  4. 👍 **Last Like**: latest liker card
+  5. ➕ **Last Follow**: shout-out card for each new follower
+  6. 🎁 **Gift Gallery**: gift goals with progress rings
+  7. 📜 **Gift Guide**: which gift does what, with split pages for helpers and saboteurs
+  8. 🔗 **Bio Link**: animated support-link-in-bio banner, 2 styles (sparks / brush swoosh)
+  9. 🎆 **Fireworks** *(free forever)*: every gift launches fireworks sized by its value
+  10. ⚔ **Team Score**: two-team battle bar, 2 designs
+
+  ➕ **More overlays coming soon**, delivered with the free automatic updates.
 - ⚡ **Auto-connect** — go LIVE and it connects by itself.
 - 🗂 **A profile for every game** — switch in one click, import / export / duplicate.
 - 🎁 **Gift Guide** — shows viewers which gift triggers what, updates the moment you edit a profile.
@@ -56,7 +68,19 @@ Open the app → **Subscribe** → send us your device number → paste the key 
 ## المميزات
 
 - 🎮 **ربط الألعاب:** اربط أي هدية أو حدث بضغطة زرار في أي لعبة بتقرا الكيبورد. الكومبو الكبير مش بيعطّل الباقي.
-- 📺 **أوفرلايز تفاعلية:** منصة توب الداعمين، معركة سكور الفرق، آخر لايك/فولو، معرض الهدايا، دليل الهدايا، رابط البايو وألعاب نارية.
+- 📺 **أوفرلايز تفاعلية: 10 أوفرلايز كلها مشمولة.** رابط لكل واحد لـ OBS أو TikTok LIVE Studio، متحركة وقابلة للتعديل:
+  1. 🎬 **فيديوهات الهدايا**: بتشغّل الفيديو بتاعك في OBS أول ما هدية توصل مع اسم الداعم
+  2. 🏆 **توب 3 الداعمين**: منصة متحركة بإجمالي الكوينز
+  3. ❤ **توب اللايكات** *(مجاني دايمًا)*
+  4. 👍 **آخر لايك**
+  5. ➕ **آخر فولو**
+  6. 🎁 **معرض الهدايا**: أهداف هدايا بدوائر تقدم
+  7. 📜 **دليل الهدايا**: أنهي هدية بتعمل إيه، مع صفحات للمساعدين والمخرّبين
+  8. 🔗 **رابط البايو**: بانر متحرك بستايلين (شرارات / فرشاة)
+  9. 🎆 **ألعاب نارية** *(مجانية دايمًا)*: كل هدية بتطلق ألعاب نارية بحجم قيمتها
+  10. ⚔ **سكور الفرق**: معركة فريقين بتصميمين
+
+  ➕ **أوفرلايز تانية قريبًا** مع التحديثات التلقائية المجانية.
 - ⚡ **اتصال تلقائي** أول ما تفتح اللايف.
 - 🗂 **بروفايل لكل لعبة**، استيراد وتصدير ونسخ.
 - 🎁 **دليل الهدايا** بيتحدث أول ما تعدّل البروفايل.

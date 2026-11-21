@@ -52,6 +52,15 @@
   .shots img, .ui img { width:100%; border-radius:18px; border:1px solid var(--line); display:block; }
   .shots figcaption, .ui figcaption { color:var(--mut); font-size:14px; padding:8px 4px; text-align:center; }
   figure { margin:0; }
+  .ovgrid { display:grid; gap:22px; grid-template-columns:repeat(auto-fill,minmax(310px,1fr)); align-items:start; }
+  .ovc img { width:100%; border-radius:18px; border:1px solid var(--line); display:block; background:#0e1730; }
+  .ovc figcaption { display:flex; flex-direction:column; gap:3px; padding:12px 4px 0; text-align:start; }
+  .ovc figcaption b { font-size:18px; color:var(--txt); }
+  .ovc figcaption span { color:var(--mut); font-size:14.5px; line-height:1.5; }
+  .ovc figcaption .freetag { align-self:flex-start; background:rgba(61,220,132,.14); color:var(--ok); border:1px solid rgba(61,220,132,.4); font-size:11.5px; font-weight:800; padding:2px 10px; border-radius:20px; letter-spacing:.4px; }
+  .ovc.soon .soonbox { border:2px dashed var(--line); border-radius:18px; min-height:210px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; padding:24px; text-align:center; background:linear-gradient(180deg,rgba(36,200,255,.06),transparent); }
+  .ovc.soon .plus { width:54px; height:54px; border-radius:50%; display:grid; place-items:center; font-size:34px; font-weight:300; color:#04101f; background:linear-gradient(135deg,var(--acc),var(--acc2)); }
+  .ovc.soon b { font-size:19px; }
   .steps { counter-reset:s; display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); }
   .step { position:relative; padding:24px 24px 24px 24px; }
   .step:before { counter-increment:s; content:counter(s); position:absolute; top:-14px; inset-inline-start:20px; width:34px; height:34px; border-radius:50%; background:linear-gradient(135deg,var(--acc),var(--acc2)); color:#04101f; font-weight:800; display:grid; place-items:center; }
@@ -117,7 +126,7 @@
   <p class="lead" data-en="Firoo Gifts connects to your TikTok LIVE, listens to every gift, like, follow, share, comment and join, and turns each one into the action you choose." data-ar="Firoo Gifts بيتصل بلايفك على تيك توك، وبيسمع كل هدية ولايك وفولو وشير وكومنت وانضمام، ويحوّل كل واحد للحركة اللي إنت تختارها."></p>
   <div class="grid">
     <div class="card"><div class="ic">🎮</div><h3 data-en="Game Integrations" data-ar="ربط الألعاب"></h3><p data-en="Map any gift or event to a key press in any game that reads the keyboard. Combos are queued fairly so a big Rose x100 never blocks the rest." data-ar="اربط أي هدية أو حدث بضغطة زرار في أي لعبة بتقرا الكيبورد. الكومبو بيتنظم بعدل فمفيش هدية كبيرة بتعطّل الباقي."></p></div>
-    <div class="card"><div class="ic">📺</div><h3 data-en="Interactive Overlays" data-ar="أوفرلايز تفاعلية"></h3><p data-en="Top supporters podium, team score battle, last like/follow, gift gallery, gift guide, bio link and fireworks — one link for OBS or TikTok LIVE Studio." data-ar="منصة توب الداعمين، معركة سكور الفرق، آخر لايك/فولو، معرض الهدايا، دليل الهدايا، رابط البايو وألعاب نارية — رابط واحد لـ OBS أو TikTok LIVE Studio."></p></div>
+    <div class="card"><div class="ic">📺</div><h3 data-en="Interactive Overlays" data-ar="أوفرلايز تفاعلية"></h3><p data-en="10 overlays: gift videos, top 3, top likes, last like, last follow, gift gallery, gift guide, bio link, fireworks and team score — one link each for OBS or TikTok LIVE Studio." data-ar="10 أوفرلايز: فيديوهات الهدايا، توب 3، توب اللايكات، آخر لايك، آخر فولو، معرض الهدايا، دليل الهدايا، رابط البايو، ألعاب نارية وسكور الفرق — رابط لكل واحد لـ OBS أو TikTok LIVE Studio."></p></div>
     <div class="card"><div class="ic">⚡</div><h3 data-en="Auto-connect" data-ar="اتصال تلقائي"></h3><p data-en="Go LIVE and it connects by itself. Close the LIVE and it waits for the next one. Nothing to click." data-ar="افتح اللايف وهو بيتصل لوحده. اقفل اللايف وهو بيستنى اللي بعده. من غير ما تضغط حاجة."></p></div>
     <div class="card"><div class="ic">🗂</div><h3 data-en="A profile for every game" data-ar="بروفايل لكل لعبة"></h3><p data-en="Switch games in one click. Import, export and duplicate profiles to share your setup." data-ar="بدّل بين الألعاب بضغطة. استورد وصدّر وانسخ البروفايلات وشارك إعدادك."></p></div>
     <div class="card"><div class="ic">🎁</div><h3 data-en="Gift Guide" data-ar="دليل الهدايا"></h3><p data-en="A vertical guide that shows your viewers which gift triggers which action, with pictures, and updates the moment you edit a profile." data-ar="دليل طولي بيوري المشاهدين أنهي هدية بتعمل إيه، بالصور، وبيتحدث أول ما تعدّل البروفايل."></p></div>
@@ -126,14 +135,34 @@
 </div></section>
 
 <section id="overlays"><div class="wrap">
-  <h2 data-en="Overlays that look like a pro made them" data-ar="أوفرلايز شكلها احترافي"></h2>
-  <p class="lead" data-en="Fully animated, fully editable (size, colors, text, animation). Paste the link as a Browser source in OBS or a Link source in TikTok LIVE Studio." data-ar="متحركة بالكامل وكلها قابلة للتعديل (الحجم، الألوان، الكتابة، الأنيميشن). الصق الرابط كمصدر Browser في OBS أو Link في TikTok LIVE Studio."></p>
-  <div class="shots">
-    <figure><img src="assets/ov-top.png" alt="Top supporters" loading="lazy"><figcaption data-en="Top supporters podium" data-ar="منصة توب الداعمين"></figcaption></figure>
-    <figure><img src="assets/ov-teams.png" alt="Team score" loading="lazy"><figcaption data-en="Team score battle" data-ar="معركة سكور الفرق"></figcaption></figure>
-    <figure><img src="assets/ov-likes.png" alt="Top likes" loading="lazy"><figcaption data-en="Top likes — free forever" data-ar="توب اللايكات — مجاني دايمًا"></figcaption></figure>
-    <figure><img src="assets/ov-last.png" alt="Last like" loading="lazy"><figcaption data-en="Last like & follow" data-ar="آخر لايك وفولو"></figcaption></figure>
-    <figure style="max-width:360px"><img src="assets/ov-guide.png" alt="Gift guide" loading="lazy"><figcaption data-en="Gift guide" data-ar="دليل الهدايا"></figcaption></figure>
+  <h2 data-en="10 overlays, all included" data-ar="10 أوفرلايز، كلها مشمولة"></h2>
+  <p class="lead" data-en="Every overlay is animated and fully editable (size, colors, text, animation). Paste the link as a Browser source in OBS or a Link source in TikTok LIVE Studio. Each one has a Preview and Test button, so you see it before you go live." data-ar="كل أوفرلاي متحرك وقابل للتعديل بالكامل (الحجم، الألوان، الكتابة، الأنيميشن). الصق الرابط كمصدر Browser في OBS أو Link في TikTok LIVE Studio. وكل واحد فيه زر معاينة وتجربة، فتشوفه قبل ما تبدأ اللايف."></p>
+  <div class="ovgrid">
+    <figure class="ovc"><img src="assets/ov-top.png" alt="Top 3 Supporters" loading="lazy">
+      <figcaption><b data-en="Top 3 Supporters" data-ar="توب 3 الداعمين"></b><span data-en="Animated podium of your biggest gifters, with live coin totals." data-ar="منصة متحركة لأكبر المهدين، مع إجمالي الكوينز لحظيًا."></span></figcaption></figure>
+    <figure class="ovc"><img src="assets/ov-likes.png" alt="Top Likes" loading="lazy">
+      <figcaption><b data-en="Top Likes" data-ar="توب اللايكات"></b><span class="freetag" data-en="FREE FOREVER" data-ar="مجاني دايمًا"></span><span data-en="Live leaderboard of who sends the most likes." data-ar="ترتيب لحظي لأكتر ناس بتبعت لايكات."></span></figcaption></figure>
+    <figure class="ovc"><img src="assets/ov-last.png" alt="Last Like" loading="lazy">
+      <figcaption><b data-en="Last Like" data-ar="آخر لايك"></b><span data-en="Shows the latest viewer who liked, with their avatar and count." data-ar="بيظهر آخر مشاهد عمل لايك بصورته وعدده."></span></figcaption></figure>
+    <figure class="ovc"><img src="assets/ov-follow.png" alt="Last Follow" loading="lazy">
+      <figcaption><b data-en="Last Follow" data-ar="آخر فولو"></b><span data-en="A shout-out card for every new follower." data-ar="كارت شكر لكل متابع جديد."></span></figcaption></figure>
+    <figure class="ovc"><img src="assets/ov-gallery.png" alt="Gift Gallery" loading="lazy">
+      <figcaption><b data-en="Gift Gallery" data-ar="معرض الهدايا"></b><span data-en="Gift goals with progress rings: viewers fill each gift to its target." data-ar="أهداف هدايا بدوائر تقدم: المشاهدين بيكملوا كل هدية لحد هدفها."></span></figcaption></figure>
+    <figure class="ovc"><img src="assets/ov-guide.png" alt="Gift Guide" loading="lazy">
+      <figcaption><b data-en="Gift Guide" data-ar="دليل الهدايا"></b><span data-en="Vertical list of every gift and what it does. Split pages for helpers and saboteurs." data-ar="قايمة طولية بكل هدية وبتعمل إيه. وصفحات منفصلة للمساعدين والمخرّبين."></span></figcaption></figure>
+    <figure class="ovc"><img src="assets/ov-teams.png" alt="Team Score" loading="lazy">
+      <figcaption><b data-en="Team Score" data-ar="سكور الفرق"></b><span data-en="Two-team battle bar with big animated scores." data-ar="معركة بين فريقين بسكور كبير ومتحرك."></span></figcaption></figure>
+    <figure class="ovc"><img src="assets/ov-teams2.png" alt="Team Score: Classic" loading="lazy">
+      <figcaption><b data-en="Team Score: Classic" data-ar="سكور الفرق: كلاسيك"></b><span data-en="A second, compact design of the team battle." data-ar="تصميم تاني مضغوط لمعركة الفرق."></span></figcaption></figure>
+    <figure class="ovc"><img src="assets/ov-bio.png" alt="Bio Link" loading="lazy">
+      <figcaption><b data-en="Bio Link" data-ar="رابط البايو"></b><span data-en="Animated support-link-in-bio banner with sparks and glow." data-ar="بانر متحرك لرابط الدعم في البايو بشرارات وتوهج."></span></figcaption></figure>
+    <figure class="ovc"><img src="assets/ov-bio2.png" alt="Bio Link: Brush style" loading="lazy">
+      <figcaption><b data-en="Bio Link: Brush style" data-ar="رابط البايو: ستايل الفرشاة"></b><span data-en="Second style: cinematic brush swooshes reveal the text." data-ar="ستايل تاني: حركات فرشاة سينمائية بتكشف الكتابة."></span></figcaption></figure>
+    <figure class="ovc"><img src="assets/ov-fireworks.png" alt="Fireworks" loading="lazy">
+      <figcaption><b data-en="Fireworks" data-ar="ألعاب نارية"></b><span class="freetag" data-en="FREE FOREVER" data-ar="مجاني دايمًا"></span><span data-en="Every gift launches fireworks, sized by its coin value, with the sender's name." data-ar="كل هدية بتطلق ألعاب نارية بحجم قيمتها، مع اسم المرسل."></span></figcaption></figure>
+    <figure class="ovc"><img src="assets/ov-video.png" alt="Gift Videos" loading="lazy">
+      <figcaption><b data-en="Gift Videos" data-ar="فيديوهات الهدايا"></b><span data-en="Play your own video in OBS when a gift arrives, with the supporter's name." data-ar="شغّل الفيديو بتاعك في OBS أول ما هدية توصل، مع اسم الداعم."></span></figcaption></figure>
+    <figure class="ovc soon"><div class="soonbox"><div class="plus">+</div><b data-en="More overlays coming soon" data-ar="أوفرلايز تانية قريبًا"></b><span data-en="New ones arrive with free automatic updates." data-ar="الجديد بيوصل مع التحديثات التلقائية المجانية."></span></div></figure>
   </div>
   <div class="ui" style="margin-top:26px">
     <figure><img src="assets/ui-main.png" alt="Firoo Gifts app" loading="lazy"><figcaption data-en="The app: clean, fast, English or Arabic" data-ar="البرنامج: نضيف وسريع، إنجليزي أو عربي"></figcaption></figure>
