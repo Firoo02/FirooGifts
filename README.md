@@ -11,7 +11,7 @@ Every gift, like and follow on your TikTok LIVE presses a key in your game, inst
 ## What you get
 
 - 🎮 **Game Integrations** — map any gift or event (gift, like, follow, share, comment, join) to a key press in any game that reads the keyboard. Fair queue: a big combo never blocks the rest.
-- 📺 **Interactive Overlays — 10 of them, all included.** One link each for OBS or TikTok LIVE Studio, fully animated and editable:
+- 📺 **Interactive Overlays — 10 of them, all included.** One link each for OBS or TikTok LIVE Studio, fully animated and editable (every preview on the website is a real animated recording):
   1. 🎬 **Gift Videos**: plays your video in OBS when a gift arrives, with the supporter's name
   2. 🏆 **Top 3 Supporters**: animated podium with live coin totals
   3. ❤ **Top Likes** *(free forever)*: live likes leaderboard
@@ -24,6 +24,8 @@ Every gift, like and follow on your TikTok LIVE presses a key in your game, inst
   10. ⚔ **Team Score**: two-team battle bar, 2 designs
 
   ➕ **More overlays coming soon**, delivered with the free automatic updates.
+
+  **Gift Guide comes in 11 styles:** classic list, helpers vs saboteurs (side by side), helpers only, saboteurs only, both in one link, text under the picture, no background, left side, compact, gifts + events, and auto pages.
 - ⚡ **Auto-connect** — go LIVE and it connects by itself.
 - 🗂 **A profile for every game** — switch in one click, import / export / duplicate.
 - 🎁 **Gift Guide** — shows viewers which gift triggers what, updates the moment you edit a profile.
@@ -81,6 +83,8 @@ Open the app → **Subscribe** → send us your device number → paste the key 
   10. ⚔ **سكور الفرق**: معركة فريقين بتصميمين
 
   ➕ **أوفرلايز تانية قريبًا** مع التحديثات التلقائية المجانية.
+
+  **دليل الهدايا بـ11 نوع:** كلاسيك، مساعدين ومخرّبين جنب بعض، مساعدين بس، مخرّبين بس، الاتنين في رابط واحد، الكتابة تحت الصورة، من غير خلفية، على الشمال، مضغوط، هدايا + أحداث، وصفحات تلقائية.
 - ⚡ **اتصال تلقائي** أول ما تفتح اللايف.
 - 🗂 **بروفايل لكل لعبة**، استيراد وتصدير ونسخ.
 - 🎁 **دليل الهدايا** بيتحدث أول ما تعدّل البروفايل.
